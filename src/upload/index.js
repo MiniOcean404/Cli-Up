@@ -1,13 +1,15 @@
 const connectSSh = require('./sftp')
 const build = require('./build')
-const config = require(`${process.cwd()}/up.js`)
 const path = require("path");
 
-const scripts = config.scripts
-const packageDir = path.join(process.cwd(), config.package)
-const env = config.env
 
 async function Task(optionObj, commandObj) {
+    const config = require(`${process.cwd()}/up.js`)
+
+    const scripts = config.scripts
+    const packageDir = path.join(process.cwd(), config.package)
+    const env = config.env
+
     //指定是否为每个环境指定同一个打包目录
     if (packageDir !== undefined && packageDir !== null && packageDir !== '') {
         for (const [env, c] of Object.entries(config.env)) {
