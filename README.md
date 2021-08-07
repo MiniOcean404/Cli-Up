@@ -1,5 +1,15 @@
 # 基于fpt的打包自动上传
 
+
+## 安装
+由于是指令需要全局安装
+```npm
+npm i build-upload -g
+```
+```yarn
+yarn add build-upload -g
+```
+
 ## 执行初始化
 ```npm
 up init
