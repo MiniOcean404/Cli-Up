@@ -13,17 +13,23 @@
     "name": "miniocean",
     "email": "1037306928@qq.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MiniOcean404/up-cli.git"
+  },
   "keywords": [
     "cli",
     "up",
-    "build-upload",
+    "ftp",
+    "build",
+    "upload",
     "打包上传",
     "打包自动上传"
   ],
   "engines": {
     "node": ">=12.00"
   },
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "chalk": "^4.1.2",
     "commander": "^8.1.0",
